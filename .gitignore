@@ -142,6 +142,11 @@ ExampleBuildToolsManagement.xcodeproj/project.xcworkspace/*
 
 ExampleBuildToolsManagement/Info.plist
 
+# LicensePlist
+ExampleBuildToolsManagement/Resources/Settings.bundle/com.mono0926.LicensePlist
+ExampleBuildToolsManagement/Resources/Settings.bundle/com.mono0926.LicensePlist.latest_result.txt
+ExampleBuildToolsManagement/Resources/Settings.bundle/com.mono0926.LicensePlist.plist
+
 # Generated
 ExampleBuildToolsManagement/Generated/*
 

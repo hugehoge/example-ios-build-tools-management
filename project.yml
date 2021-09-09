@@ -34,6 +34,14 @@ targets:
         outputFiles:
           - ${SRCROOT}/ExampleBuildToolsManagement/Generated/IB-Scenes+Generated.swift
         basedOnDependencyAnalysis: no
+      - name: LicensePlist
+        script: |
+          ${SRCROOT}/bin/license-plist \
+          --suppress-opening-directory \
+          --fail-if-missing-license \
+          --output-path "${SRCROOT}/ExampleBuildToolsManagement/Resources/Settings.bundle"
+        outputFiles:
+          - ${SRCROOT}/ExampleBuildToolsManagement/Resources/Settings.bundle
       - name: Format and linting
         script: |
           ${SRCROOT}/bin/swiftformat --swiftversion 5.4 ExampleBuildToolsManagement/
