@@ -142,5 +142,8 @@ ExampleBuildToolsManagement.xcodeproj/project.xcworkspace/*
 
 ExampleBuildToolsManagement/Info.plist
 
+# Generated
+ExampleBuildToolsManagement/Generated/*
+
 # .gitkeep
 !.gitkeep

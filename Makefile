@@ -29,6 +29,7 @@ bootstrap:
 	@${MAKE} local-install-licenseplist
 	@echo ""
 	@echo "*** Generate Xcode project ***"
+	@${BIN_DIR}/swiftgen
 	@$(MAKE) generate-project
 	@echo ""
 	@echo "Complete bootstrap."
