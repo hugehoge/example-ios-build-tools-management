@@ -13,7 +13,7 @@ targets:
     type: application
     platform: iOS
     info:
-      path: ExampleBuildToolsManagement/Info.plist
+      path: ExampleBuildToolsManagement/Resources/Info.plist
       properties:
         UILaunchStoryboardName: LaunchScreen
     settings:
