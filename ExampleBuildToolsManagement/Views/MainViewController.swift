@@ -4,6 +4,8 @@
 
 import UIKit
 
+import Kingfisher
+
 class MainViewController: UIViewController {
     @IBOutlet var logoImageView: UIImageView!
 
@@ -22,5 +24,10 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        logoImageView.kf.setImage(
+            with: URL(string: "https://developer.apple.com/swift/images/swift-logo.svg"),
+            options: [.processor(SVGProcessor())]
+        )
     }
 }
