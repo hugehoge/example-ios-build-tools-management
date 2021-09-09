@@ -1,0 +1,26 @@
+name: ExampleBuildToolsManagement
+options:
+  xcodeVersion: "12.5.1"
+  deploymentTarget:
+    iOS: "13.0"
+  groupSortPosition: top
+packages:
+  Kingfisher:
+    url: https://github.com/onevcat/Kingfisher.git
+    version: 6.3.1
+targets:
+  ExampleBuildToolsManagement:
+    type: application
+    platform: iOS
+    info:
+      path: ExampleBuildToolsManagement/Info.plist
+      properties:
+        UILaunchStoryboardName: LaunchScreen
+    settings:
+      base:
+        TARGETED_DEVICE_FAMILY: 1
+        PRODUCT_BUNDLE_IDENTIFIER: io.github.hugehoge.ExampleBuildToolsManagement
+    sources:
+      - path: ExampleBuildToolsManagement
+    dependencies:
+      - package: Kingfisher

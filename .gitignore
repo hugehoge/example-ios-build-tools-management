@@ -127,7 +127,20 @@ iOSInjectionProject/
 ## Custom Project Settings
 ##
 
+# Swift CLI tools
 bin/*
 lib/*
 
+# XcodeGen
+ExampleBuildToolsManagement.xcodeproj/*
+
+!ExampleBuildToolsManagement.xcodeproj/xcshareddata
+
+!ExampleBuildToolsManagement.xcodeproj/project.xcworkspace
+ExampleBuildToolsManagement.xcodeproj/project.xcworkspace/*
+!ExampleBuildToolsManagement.xcodeproj/project.xcworkspace/xcshareddata
+
+ExampleBuildToolsManagement/Info.plist
+
+# .gitkeep
 !.gitkeep
