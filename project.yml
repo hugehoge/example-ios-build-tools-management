@@ -24,5 +24,15 @@ targets:
       - path: ExampleBuildToolsManagement
         excludes:
           - "**/.gitkeep"
+      - path: ExampleBuildToolsManagement/Generated/IB-Scenes+Generated.swift
+        group: ExampleBuildToolsManagement/Generated
+        optional: true
+    preBuildScripts:
+      - name: SwiftGen
+        script: |
+          ${SRCROOT}/bin/swiftgen
+        outputFiles:
+          - ${SRCROOT}/ExampleBuildToolsManagement/Generated/IB-Scenes+Generated.swift
+        basedOnDependencyAnalysis: no
     dependencies:
       - package: Kingfisher
