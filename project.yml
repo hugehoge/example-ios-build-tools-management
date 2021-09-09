@@ -8,6 +8,9 @@ packages:
   Kingfisher:
     url: https://github.com/onevcat/Kingfisher.git
     version: 6.3.1
+  SVGKit:
+    url: https://github.com/SVGKit/SVGKit.git
+    version: 3.0.0
 targets:
   ExampleBuildToolsManagement:
     type: application
@@ -49,3 +52,4 @@ targets:
           ${SRCROOT}/bin/iblinter
     dependencies:
       - package: Kingfisher
+      - package: SVGKit
