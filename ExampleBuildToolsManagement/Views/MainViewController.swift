@@ -8,7 +8,7 @@ class MainViewController: UIViewController {
     @IBOutlet var logoImageView: UIImageView!
 
     static func instantiate() -> MainViewController {
-        return StoryboardScene.MainView.initialScene.instantiate()
+        StoryboardScene.MainView.initialScene.instantiate()
     }
 
     @available(*, unavailable)

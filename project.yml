@@ -34,11 +34,10 @@ targets:
         outputFiles:
           - ${SRCROOT}/ExampleBuildToolsManagement/Generated/IB-Scenes+Generated.swift
         basedOnDependencyAnalysis: no
-      - name: SwiftLint
+      - name: Format and linting
         script: |
+          ${SRCROOT}/bin/swiftformat --swiftversion 5.4 ExampleBuildToolsManagement/
           ${SRCROOT}/bin/swiftlint
-      - name: IBLinter
-        script: |
           ${SRCROOT}/bin/iblinter
     dependencies:
       - package: Kingfisher
