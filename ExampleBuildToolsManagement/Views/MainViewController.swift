@@ -5,22 +5,22 @@
 import UIKit
 
 class MainViewController: UIViewController {
-    static func instantiate() -> MainViewController {
-        return MainViewController()
-    }
+    @IBOutlet var logoImageView: UIImageView!
 
-    private init() {
-        super.init(nibName: nil, bundle: nil)
+    static func instantiate() -> MainViewController {
+        return StoryboardScene.MainView.initialScene.instantiate()
     }
 
     @available(*, unavailable)
+    private init() {
+        fatalError("init() has not been implemented")
+    }
+
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .white
     }
 }
