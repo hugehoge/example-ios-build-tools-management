@@ -58,14 +58,14 @@ VERSION_CMD="${BIN_PATH} --version"
 EXPECTED_VERSION_FMT="${VERSION}"
 
 if [ "$(${VERSION_CMD} 2>/dev/null)" != "${EXPECTED_VERSION_FMT}" ]; then
-  print_verbose "${NAME} ${VERSION} not installed. Download and installing..."
+    print_verbose "${NAME} ${VERSION} not installed. Download and installing..."
 
-  curl -fsSL "${ZIP_URL}" | bsdtar xf - -C "${INSTALL_PATH}"
-  chmod 755 "${BIN_PATH}"
+    curl -fsSL "${ZIP_URL}" | bsdtar xf - -C "${INSTALL_PATH}"
+    chmod 755 "${BIN_PATH}"
 
-  print_verbose "${NAME} ${VERSION} installed."
+    print_verbose "${NAME} ${VERSION} installed."
 else
-  print_verbose "${NAME} ${VERSION} already installed." 
+    print_verbose "${NAME} ${VERSION} already installed."
 fi
 
 echo "${BIN_PATH}"

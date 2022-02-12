@@ -64,14 +64,14 @@ EXTRACT_VERSION_CMD="sed -n 3p ${TMPDIR}/com.mono0926.LicensePlist.latest_result
 EXPECTED_VERSION_FMT="LicensePlist Version: ${VERSION}"
 
 if [ "$(${LICENSEPLIST_CMD} >/dev/null 2>&1 && ${EXTRACT_VERSION_CMD} 2>/dev/null)" != "${EXPECTED_VERSION_FMT}" ]; then
-  print_verbose "${NAME} ${VERSION} not installed. Download and installing..."
+    print_verbose "${NAME} ${VERSION} not installed. Download and installing..."
 
-  curl -fsSL "${ZIP_URL}" | bsdtar xf - -C "${INSTALL_PATH}"
-  chmod 755 "${BIN_PATH}"
+    curl -fsSL "${ZIP_URL}" | bsdtar xf - -C "${INSTALL_PATH}"
+    chmod 755 "${BIN_PATH}"
 
-  print_verbose "${NAME} ${VERSION} installed."
+    print_verbose "${NAME} ${VERSION} installed."
 else
-  print_verbose "${NAME} ${VERSION} already installed." 
+    print_verbose "${NAME} ${VERSION} already installed."
 fi
 
 echo "${BIN_PATH}"
