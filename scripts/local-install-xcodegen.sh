@@ -50,7 +50,7 @@ INSTALL_PATH=$1
 mkdir -p "${INSTALL_PATH}"
 
 NAME="XcodeGen"
-VERSION="2.24.0"
+VERSION="2.26.0"
 ZIP_URL="https://github.com/yonaskolb/XcodeGen/releases/download/${VERSION}/xcodegen.zip"
 BIN_PATH="${INSTALL_PATH}/xcodegen/bin/xcodegen"
 
