@@ -50,7 +50,7 @@ INSTALL_PATH=$1
 mkdir -p "${INSTALL_PATH}"
 
 NAME="IBLinter"
-VERSION="0.4.27"
+VERSION="0.5.0"
 ZIP_URL="https://github.com/IBDecodable/IBLinter/releases/download/${VERSION}/portable_iblinter.zip"
 BIN_PATH="${INSTALL_PATH}/bin/iblinter"
 
