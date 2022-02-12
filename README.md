@@ -23,7 +23,7 @@ $ make open
 
 |Name|URL|Version|`lipo -archs`|Note|
 |:-:|:-|:-|:-|:-|
-|Mint|https://github.com/yonaskolb/Mint|0.16.0|`x86_64`|Do not use in this project|
+|Mint|https://github.com/yonaskolb/Mint|0.17.0|`x86_64 arm64`|Do not use in this project|
 |XcodeGen|https://github.com/yonaskolb/XcodeGen|2.24.0|`x86_64 arm64`|It won't work properly with symbolic link.|
 |SwiftGen|https://github.com/SwiftGen/SwiftGen|6.4.0|`x86_64`|-|
 |SwiftLint|https://github.com/realm/SwiftLint|0.43.1|`x86_64 arm64`|-|

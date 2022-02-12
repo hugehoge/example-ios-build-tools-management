@@ -50,7 +50,7 @@ INSTALL_PATH=$1
 mkdir -p "${INSTALL_PATH}"
 
 NAME="Mint"
-VERSION="0.16.0"
+VERSION="0.17.0"
 ZIP_URL="https://github.com/yonaskolb/Mint/releases/download/${VERSION}/mint.zip"
 BIN_PATH="${INSTALL_PATH}/mint"
 
