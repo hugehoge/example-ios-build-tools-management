@@ -13,11 +13,11 @@ $ make open
 ## How it works
 
 1. Cache checks.
-    1. Compare between the existing build tool version and expected version.
-    1. If the versions are equal, use existing build tool binary.
-1. Download a zip file via curl command from the GitHub release page.
-1. Unarchive the zip file and place the build tool binary.
-1. Can use the build tool binaries without a Package Manager (e.g. Swift Package Manager, Mint, etc.)
+    1. Compare between the existing executable and expected version.
+    1. If the versions are equal, use existing executable.
+1. Download a zip file from the GitHub release page.
+1. Unarchive the zip file and place the executable.
+1. You can use the build tool executable without a Package Manager (e.g. Swift Package Manager, Mint, etc.)
 
 ## Target tools
 
