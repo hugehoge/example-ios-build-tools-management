@@ -27,6 +27,6 @@ $ make open
 |XcodeGen|https://github.com/yonaskolb/XcodeGen|2.24.0|`x86_64 arm64`|It won't work properly with symbolic link.|
 |SwiftGen|https://github.com/SwiftGen/SwiftGen|6.4.0|`x86_64`|-|
 |SwiftLint|https://github.com/realm/SwiftLint|0.43.1|`x86_64 arm64`|-|
-|SwiftFormat|https://github.com/nicklockwood/SwiftFormat|0.48.11|`x86_64 arm64`|-|
+|SwiftFormat|https://github.com/nicklockwood/SwiftFormat|0.49.4|`x86_64 arm64`|-|
 |IBLinter|https://github.com/IBDecodable/IBLinter|0.5.0|`x86_64`|-|
 |LicensePlist|https://github.com/mono0926/LicensePlist|3.17.0|`x86_64 arm64`|-|

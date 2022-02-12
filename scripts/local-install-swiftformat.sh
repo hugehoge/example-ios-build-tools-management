@@ -50,7 +50,7 @@ INSTALL_PATH=$1
 mkdir -p "${INSTALL_PATH}"
 
 NAME="SwiftFormat"
-VERSION="0.48.11"
+VERSION="0.49.4"
 ZIP_URL="https://github.com/nicklockwood/SwiftFormat/releases/download/${VERSION}/swiftformat.zip"
 BIN_PATH="${INSTALL_PATH}/swiftformat"
 
