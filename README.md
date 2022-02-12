@@ -29,4 +29,4 @@ $ make open
 |SwiftLint|https://github.com/realm/SwiftLint|0.43.1|`x86_64 arm64`|-|
 |SwiftFormat|https://github.com/nicklockwood/SwiftFormat|0.48.11|`x86_64 arm64`|-|
 |IBLinter|https://github.com/IBDecodable/IBLinter|0.4.27|`x86_64`|-|
-|LicensePlist|https://github.com/mono0926/LicensePlist|3.13.0|`x86_64`|Command has no version option.|
+|LicensePlist|https://github.com/mono0926/LicensePlist|3.17.0|`x86_64 arm64`|-|

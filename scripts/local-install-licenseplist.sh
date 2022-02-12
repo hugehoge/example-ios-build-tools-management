@@ -50,20 +50,14 @@ INSTALL_PATH=$1
 mkdir -p "${INSTALL_PATH}"
 
 NAME="LicensePlist"
-VERSION="3.13.0"
+VERSION="3.17.0"
 ZIP_URL="https://github.com/mono0926/LicensePlist/releases/download/${VERSION}/portable_licenseplist.zip"
 BIN_PATH="${INSTALL_PATH}/license-plist"
 
-LICENSEPLIST_CMD="${BIN_PATH} --output-path ${TMPDIR} --force --suppress-opening-directory \
---cartfile-path /var/empty/Cartfile \
---mintfile-path /var/empty/Mintfile \
---pods-path /var/empty/Pods \
---package-path /var/empty/Package.swift \
---config-path /var/empty/license_plist.yml"
-EXTRACT_VERSION_CMD="sed -n 3p ${TMPDIR}/com.mono0926.LicensePlist.latest_result.txt"
-EXPECTED_VERSION_FMT="LicensePlist Version: ${VERSION}"
+VERSION_CMD="${BIN_PATH} --version"
+EXPECTED_VERSION_FMT="${VERSION}"
 
-if [ "$(${LICENSEPLIST_CMD} >/dev/null 2>&1 && ${EXTRACT_VERSION_CMD} 2>/dev/null)" != "${EXPECTED_VERSION_FMT}" ]; then
+if [ "$(${VERSION_CMD} 2>/dev/null)" != "${EXPECTED_VERSION_FMT}" ]; then
     print_verbose "${NAME} ${VERSION} not installed. Download and installing..."
 
     curl -fsSL "${ZIP_URL}" | bsdtar xf - -C "${INSTALL_PATH}"
