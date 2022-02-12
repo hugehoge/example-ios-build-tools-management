@@ -50,7 +50,7 @@ INSTALL_PATH=$1
 mkdir -p "${INSTALL_PATH}"
 
 NAME="SwiftLint"
-VERSION="0.43.1"
+VERSION="0.46.2"
 ZIP_URL="https://github.com/realm/SwiftLint/releases/download/${VERSION}/portable_swiftlint.zip"
 BIN_PATH="${INSTALL_PATH}/swiftlint"
 
